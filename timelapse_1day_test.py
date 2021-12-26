@@ -3,6 +3,7 @@ import time
 
 N = 24*60
 
+# Just do one day (plus camera wait time)
 for i in range(N):
    fname = 'pic_{:07d}.jpg'.format(i)
    str = 'raspistill -o {:s} -ex auto -q 75 -w 1024 -h 768'.format(fname)
